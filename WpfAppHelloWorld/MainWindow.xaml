@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppHelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppHelloWorld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1014">
+    <Grid Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="925">
+        <Label Content="Danh sách thiết bị" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="txtDevices" Content="thiết bị" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="Proxy" HorizontalAlignment="Left" Margin="194,22,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="366,22,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="2FA token" HorizontalAlignment="Left" Margin="566,22,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="2FA converted" HorizontalAlignment="Left" Margin="756,22,0,0" VerticalAlignment="Top" Width="113"/>
+
+
+    </Grid>
+</Window>
