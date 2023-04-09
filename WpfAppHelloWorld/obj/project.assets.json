@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Otp.NET/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Otp.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Otp.NET.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Otp.NET/1.3.0": {
+      "sha512": "6XlSlvszByLDLjgDBULNtrexGhRHTrJpikW2x4oMB+Z4i1jPg89ARRSSOoIfYB2ORTdfugguWYLBz2No4lsM6g==",
+      "type": "package",
+      "path": "otp.net/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "lib/net45/Otp.NET.dll",
+        "lib/net6.0/Otp.NET.dll",
+        "lib/netstandard1.3/Otp.NET.dll",
+        "lib/netstandard2.0/Otp.NET.dll",
+        "otp.net.1.3.0.nupkg.sha512",
+        "otp.net.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "Otp.Net >= 1.3.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\nguye\\.nuget\\packages\\": {},
@@ -50,6 +81,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "Otp.Net": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

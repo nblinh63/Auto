@@ -19,6 +19,9 @@ using System.Windows.Shapes;
 using KAutoHelper;
 using System.Collections;
 using System.Threading;
+using System.Net.Http;
+using OtpNet;
+using System.Runtime.CompilerServices;
 
 namespace WpfAppHelloWorld
 {
@@ -37,7 +40,7 @@ namespace WpfAppHelloWorld
 
         private void showAllDevices()
         {
-            ADBHelper.SetADBFolderPath("C:\\Users\\nguye\\source\\repos\\WpfAppHelloWorld\\WpfAppHelloWorld\\bin\\Debug\\net6.0-windows");
+           // ADBHelper.SetADBFolderPath("\\Debug\\net6.0-windows");
 
             devices = ADBHelper.GetDevices();
             string devicesName = "";
@@ -50,8 +53,25 @@ namespace WpfAppHelloWorld
 
         private void applyProxy()
         {
+            string[] ports = tbProxy.Text.Split(new char[] { '\n', });
+            if (devices != null && devices.Count > 0 && devices.Count <= ports.Length)
+            {
+                for (int i = 0; i < devices.Count; i++)
+                {
+                    ADBHelper.ExecuteCMD("adb -s " + devices[i] + " shell settings put global http_proxy " + ports[i]);
+                }
+            }
+        }
+
+        private void removeProxy()
+        {
+            devices?.ForEach(device =>
+            {
+                ADBHelper.ExecuteCMD("adb -s " + device + " shell settings put global http_proxy :0");
+            });
 
         }
+
 
         private void inputText()
         {
@@ -77,22 +97,71 @@ namespace WpfAppHelloWorld
 
                     for (int i = 0; i < devices.Count; i++)
                     {
-                        ADBHelper.InputText(devices[i], content[i]);
+                        ADBHelper.InputText(devices[i], content[i].Trim());
                     }
                 });
-              
-                   
 
-               
+
+
+
             }
         }
 
         private void generateToken()
         {
+            string[] content = tb2FA.Text.Split(new char[] { '\n', });
+            string generateString = "";
 
+            for (int i = 0; i < content.Length; i++)
+            {
+                generateString += getGenerateToken(content[i].Trim()) + "\n";
+            }
+            tb2FAConverted.Text = generateString;
+        }
+
+
+        private string getGenerateToken(string secret)
+        {
+            var secretKey = Base32Encoding.ToBytes(secret.Replace("\r", ""));
+            var totp = new Totp(secretKey);
+            var otp = totp.ComputeTotp();
+            return otp.ToString();
         }
 
         private void copyToken()
+        {
+            string[] content = tb2FAConverted.Text.Split(new char[] { '\n', });
+            if (devices != null && devices.Count > 0 && devices.Count <= content.Length)
+            {
+                Task.Run(() =>
+                {
+                    for (int i = 0; i < devices.Count; i++)
+                    {
+                        ADBHelper.TapByPercent(devices[i], 15.9, 17.6);
+                    }
+
+                    for (int i = 0; i < devices.Count; i++)
+                    {
+                        ADBHelper.TapByPercent(devices[i], 23.5, 8.3);
+                    }
+
+                    Task.Delay(1000);
+
+
+                    for (int i = 0; i < devices.Count; i++)
+                    {
+                        ADBHelper.InputText(devices[i], content[i].Trim());
+                    }
+                });
+
+            }
+        }
+
+        private void copyClipboard()
+        {
+
+        }
+        private void clearClipboard()
         {
 
         }
@@ -107,7 +176,44 @@ namespace WpfAppHelloWorld
             inputText();
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            applyProxy();
+        }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            removeProxy();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            generateToken();
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            copyToken();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            copyClipboard();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            clearClipboard();
+        }
+
+
+
+        /*    <TextBox.Resources>
+                           <Style TargetType = "{x:Type Paragraph}" >
+                               < Setter Property="Margin" Value="0" />
+                           </Style>
+                       </TextBox.Resources>*/
 
         /*     public void OpenFileDialogForm()
              {

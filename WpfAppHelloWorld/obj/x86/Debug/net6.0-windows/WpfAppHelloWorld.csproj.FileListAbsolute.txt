@@ -22,3 +22,4 @@ C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld.genruntimeconfig.cache
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\ref\WpfAppHelloWorld.dll
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld_MarkupCompile.lref
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\x86\Debug\net6.0-windows\Otp.NET.dll
