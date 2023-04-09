@@ -9,7 +9,6 @@ C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\App.g.cs
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld_MarkupCompile.cache
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld_MarkupCompile.lref
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\MainWindow.baml
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld.g.resources
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,4 @@ C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld.pdb
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld.genruntimeconfig.cache
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\ref\WpfAppHelloWorld.dll
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\WpfAppHelloWorld_MarkupCompile.lref

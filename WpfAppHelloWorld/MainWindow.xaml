@@ -4,16 +4,150 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppHelloWorld"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1014">
-    <Grid Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="925">
-        <Label Content="Danh sách thiết bị" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label x:Name="txtDevices" Content="thiết bị" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="81"/>
-        <Label Content="Proxy" HorizontalAlignment="Left" Margin="194,22,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label Content="User Name" HorizontalAlignment="Left" Margin="366,22,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label Content="2FA token" HorizontalAlignment="Left" Margin="566,22,0,0" VerticalAlignment="Top" Width="113"/>
-        <Label Content="2FA converted" HorizontalAlignment="Left" Margin="756,22,0,0" VerticalAlignment="Top" Width="113"/>
+        Title="Auto" Width="1948" Height="1065">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30">
+                </RowDefinition>
+                <RowDefinition>
+                </RowDefinition>
+            </Grid.RowDefinitions>
 
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition  Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="Thiết bị" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="STT" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"  Text="Proxy" Grid.Row="0" Grid.Column="2"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="Username" Grid.Row="0" Grid.Column="3"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="2FA" Grid.Row="0" Grid.Column="4"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="2FA Converted" Grid.Row="0" Grid.Column="5"/>
+
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="14" Grid.Row="0" x:Name="txtblDevicesName"/>
+                <Button Content="Reload" Grid.Row="1" Click="Button_Click"/>
+            </Grid>
+
+            <StackPanel Grid.Row="2" Grid.Column="1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="1" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="2" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="3" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="4" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="5" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="6" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="7" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="8" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="9" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="10" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="11" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="12" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="13" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="14" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="15" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="16" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="17" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="18" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="19" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="20" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="21" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="22" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="23" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="24" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="25" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="26" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="27" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="28" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="29" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="30" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="31" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="32" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="33" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="34" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="35" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="36" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="37" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="38" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="39" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="40" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="41" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="42" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="43" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="44" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="45" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="46" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="47" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="48" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="49" Grid.Row="0" Grid.Column="0"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Text="50" Grid.Row="0" Grid.Column="0"/>
+            </StackPanel>
+            <Grid Grid.Row="2" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBox AcceptsReturn="True"  FontSize="14" Grid.Row="0">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Paragraph}">
+                            <Setter Property="Margin" Value="0" />
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <Button Content="Gán Proxy" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBox x:Name="tbContent" AcceptsReturn="True" FontSize="14" Grid.Row="0"/>
+                <Button Content="Nhập" Grid.Row="1" Click="Button_Click_1"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBox FontSize="14" Grid.Row="0"/>
+                <Button Content="Lấy Token" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBox FontSize="14" Grid.Row="0"/>
+                <Button Content="Copy" Grid.Row="1"/>
+            </Grid>
+
+        </Grid>
+
+    </DockPanel>
 </Window>
