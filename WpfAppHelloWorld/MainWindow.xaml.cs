@@ -40,9 +40,7 @@ namespace WpfAppHelloWorld
 
         private void showAllDevices()
         {
-           // ADBHelper.SetADBFolderPath("\\Debug\\net6.0-windows");
-
-            devices = ADBHelper.GetDevices();
+             devices = ADBHelper.GetDevices();
             string devicesName = "";
             devices?.ForEach(device =>
             {
@@ -53,6 +51,7 @@ namespace WpfAppHelloWorld
 
         private void applyProxy()
         {
+            devices = ADBHelper.GetDevices();
             string[] ports = tbProxy.Text.Split(new char[] { '\n', });
             if (devices != null && devices.Count > 0 && devices.Count <= ports.Length)
             {
@@ -65,6 +64,7 @@ namespace WpfAppHelloWorld
 
         private void removeProxy()
         {
+            devices = ADBHelper.GetDevices();
             devices?.ForEach(device =>
             {
                 ADBHelper.ExecuteCMD("adb -s " + device + " shell settings put global http_proxy :0");
@@ -75,6 +75,7 @@ namespace WpfAppHelloWorld
 
         private void inputText()
         {
+            devices = ADBHelper.GetDevices();
             string[] content = tbContent.Text.Split(new char[] { '\n', });
             if (devices != null && devices.Count > 0 && devices.Count <= content.Length)
             {
@@ -82,28 +83,9 @@ namespace WpfAppHelloWorld
                 {
                     for (int i = 0; i < devices.Count; i++)
                     {
-                        ADBHelper.TapByPercent(devices[i], 15.9, 17.6);
-                    }
-
-                    Task.Delay(3000);
-
-                    for (int i = 0; i < devices.Count; i++)
-                    {
-                        ADBHelper.TapByPercent(devices[i], 23.5, 8.3);
-                    }
-
-                    Task.Delay(1000);
-
-
-                    for (int i = 0; i < devices.Count; i++)
-                    {
                         ADBHelper.InputText(devices[i], content[i].Trim());
                     }
                 });
-
-
-
-
             }
         }
 
@@ -130,24 +112,12 @@ namespace WpfAppHelloWorld
 
         private void copyToken()
         {
+            devices = ADBHelper.GetDevices();
             string[] content = tb2FAConverted.Text.Split(new char[] { '\n', });
             if (devices != null && devices.Count > 0 && devices.Count <= content.Length)
             {
                 Task.Run(() =>
                 {
-                    for (int i = 0; i < devices.Count; i++)
-                    {
-                        ADBHelper.TapByPercent(devices[i], 15.9, 17.6);
-                    }
-
-                    for (int i = 0; i < devices.Count; i++)
-                    {
-                        ADBHelper.TapByPercent(devices[i], 23.5, 8.3);
-                    }
-
-                    Task.Delay(1000);
-
-
                     for (int i = 0; i < devices.Count; i++)
                     {
                         ADBHelper.InputText(devices[i], content[i].Trim());
