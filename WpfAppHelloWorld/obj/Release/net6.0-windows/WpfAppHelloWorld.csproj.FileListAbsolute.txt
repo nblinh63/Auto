@@ -21,7 +21,5 @@ C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\WpfAppHelloWorld.pdb
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\WpfAppHelloWorld.genruntimeconfig.cache
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\ref\WpfAppHelloWorld.dll
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\WpfAppHelloWorld.dll.manifest
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\WpfAppHelloWorld.application
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\WpfAppHelloWorld.dll.manifest
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\WpfAppHelloWorld.application
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\MainWindow.baml
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\WpfAppHelloWorld.g.resources
