@@ -1,0 +1,7 @@
+C:\Users\nguye\Desktop\AutoHelper\WpfAppHelloWorld.exe
+C:\Users\nguye\Desktop\AutoHelper\WpfAppHelloWorld.dll
+C:\Users\nguye\Desktop\AutoHelper\WpfAppHelloWorld.deps.json
+C:\Users\nguye\Desktop\AutoHelper\WpfAppHelloWorld.runtimeconfig.json
+C:\Users\nguye\Desktop\AutoHelper\WpfAppHelloWorld.pdb
+C:\Users\nguye\Desktop\AutoHelper\Otp.NET.dll
+C:\Users\nguye\Desktop\AutoHelper\KAutoHelper.dll

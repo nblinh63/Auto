@@ -1,0 +1,7 @@
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\WpfAppHelloWorld.exe
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\WpfAppHelloWorld.dll
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\WpfAppHelloWorld.deps.json
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\WpfAppHelloWorld.runtimeconfig.json
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\WpfAppHelloWorld.pdb
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\Otp.NET.dll
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\bin\Release\net6.0-windows\app.publish\KAutoHelper.dll

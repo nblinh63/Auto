@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\x86\Debug\net6.0-windows\
+C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\obj\Release\net6.0-windows\
 WpfAppHelloWorld
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\nguye\source\repos\WpfAppHelloWorld\WpfAppHelloWorld\App.xaml
 11407045341
 
-5-349079797
-196-1327433305
+5517850542
+196818147242
 MainWindow.xaml;
 
-True
+False
 
